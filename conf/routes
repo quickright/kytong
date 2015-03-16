@@ -1,0 +1,35 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           @controllers.Application.index
+GET     /randomUUID                 @controllers.Application.randomUUID
+
+#kyshop
+GET     /kyshop                   controllers.admin.KyShopAction.index
+GET     /kyshop/new               controllers.admin.KyShopAction.create
+POST    /kyshop/save              controllers.admin.KyShopAction.save
+#GET     /kyshop/:id               controllers.admin.KyShopAction.edit(id:String)
+#POST    /kyshop/:id               controllers.admin.KyShopAction.update(id:String)
+
+#employee
+GET     /employee                   controllers.admin.EmployeeAction.index
+GET     /employee/list              controllers.admin.EmployeeAction.list(p:Int ?=0,s:Int ?=2,f ?="")
+GET     /employee/new               controllers.admin.EmployeeAction.create
+POST    /employee/save               controllers.admin.EmployeeAction.save
+GET     /employee/:id               controllers.admin.EmployeeAction.edit(id:String)
+POST   /employees/:id               controllers.admin.EmployeeAction.update(id:String)
+
+
+POST     /employee/:id/delete               controllers.admin.EmployeeAction.delete(id:String)
+
+# Map static resources from the /public folder to the /assets URL path
+#GET      /assets/*file              controllers.Assets.at(path="/public", file)
+#GET     /assets/*file               controllers.Assets.versioned(path="/public", file)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+# Map the webjar static assets to the /webjars URL
+GET    /webjars/*file          controllers.WebJarAssets.at(file)

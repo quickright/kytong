@@ -1,0 +1,20 @@
+@(kyshopForm: Form[KyShop])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(views.html.admin.twitterBootstrapInput.f) }
+
+@inputText(kyshopForm("mobile"), '_label -> "手机号", 'class -> "form-control")
+@inputText(kyshopForm("name"), '_label -> "公司名", 'class -> "form-control")
+@inputText(kyshopForm("namePy"), '_label -> "公司拼音", 'class -> "form-control")
+@inputText(kyshopForm("forShort"), '_label -> "公司简称", 'class -> "form-control")
+@inputText(kyshopForm("address"), '_label -> "店面地址", 'class -> "form-control")
+@inputText(kyshopForm("email"), '_label -> "电子邮件", 'class -> "form-control")
+@inputText(kyshopForm("tel"), '_label -> "座机", 'class -> "form-control")
+@inputText(kyshopForm("fax"), '_label -> "传真", 'class -> "form-control")
+@inputText(kyshopForm("site"), '_label -> "网站", 'class -> "form-control")
+@inputText(kyshopForm("status"), '_label -> "状态", 'class -> "form-control")
+@inputText(kyshopForm("joiningDate"), '_label -> "加入时间", 'class -> "form-control")
+@inputText(kyshopForm("modifyDate"), '_label -> "修改时间", 'class -> "form-control")
+@textarea(kyshopForm("profile"), '_label -> "公司介绍", 'class -> "form-control")
+@textarea(kyshopForm("remarks"), '_label -> "备注", 'class -> "form-control")

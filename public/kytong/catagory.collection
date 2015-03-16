@@ -1,0 +1,9 @@
+
+db.catagory.save({"name":"名片","l1":"创意名片,烫金名片,胶印名片,商务名片,金属名片,UV名片,PVC名片,异形名片,凹凸名片,塑料名片","createdate":new Date(),"updatedate":new Date(),"order":10,"status":1})
+db.catagory.save({"name":"书刊画册","l1":"菜谱,杂志,通讯录,图书,画册,证书,标书,样本,教材,手册,楼书,照片书,论文制作","createdate":new Date(),"updatedate":new Date(),"order":20,"status":1})
+db.catagory.save({"name":"喷绘写真","l1":"写真,广告喷绘,横幅,展架,户外喷绘,易拉宝,人像立牌,照片写真,KT展板,灯布喷绘,招牌喷绘,喷绘车贴,背胶喷绘,门头喷绘","createdate":new Date(),"updatedate":new Date(),"order":30,"status":1})
+db.catagory.save({"name":"证件卡片","l1":"贺卡,请柬,明信片,刮奖卡,点餐卡,趣味卡片,送餐卡,会员卡,现金券","createdate":new Date(),"updatedate":new Date(),"order":40,"status":1})
+db.catagory.save({"name":"办公宣传","l1":"优惠券,二维码,海报,条形码,信封/信纸,宣传单,手提袋,包装盒,产品说明书,折页,桌牌/胸卡,封套,不干胶贴,VI手册,审计公告,企业年报,培训资料,内部期刊,会员杂志,会议资料","createdate":new Date(),"updatedate":new Date(),"order":50,"status":1})
+db.catagory.save({"name":"文件装订","l1":"光盘刻录,排版/打字,装订装帧,其他服务","createdate":new Date(),"updatedate":new Date(),"order":60,"status":1})
+db.catagory.save({"name":"工程大图","l1":"大图复印,CAD出图,硫酸出图,晒蓝图,出白图,彩色出图,黑白扫描,彩色扫描,室内图纸,折图","createdate":new Date(),"updatedate":new Date(),"order":70,"status":1})
+db.catagory.save({"name":"个性定制","l1":"个性台历,个人出书,个性杂志,个性挂历,个性贺卡,其它个性快印","createdate":new Date(),"updatedate":new Date(),"order":80,"status":1})

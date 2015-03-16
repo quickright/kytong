@@ -1,0 +1,18 @@
+@(employeeForm: Form[Employee])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.f) }
+
+@inputText(employeeForm("name"), '_label -> "姓名", 'class -> "form-control")
+@inputText(employeeForm("mobile"), '_label -> "电话", 'class -> "form-control")
+@inputText(employeeForm("joiningDate"), '_label -> "入职日期", 'class -> "form-control")
+@inputText(employeeForm("email"), '_label -> "电子邮件", 'class -> "form-control")
+@inputText(employeeForm("sex"), '_label -> "性别", 'class -> "form-control")
+@inputText(employeeForm("address"), '_label -> "住址", 'class -> "form-control")
+@inputText(employeeForm("address_tel"), '_label -> "住址电话", 'class -> "form-control")
+@inputText(employeeForm("status"), '_label -> "状态", 'class -> "form-control")
+@inputText(employeeForm("school"), '_label -> "毕业学校", 'class -> "form-control")
+@inputText(employeeForm("edu"), '_label -> "学历", 'class -> "form-control")
+@inputText(employeeForm("dob"), '_label -> "生日", 'class -> "form-control")
+@inputText(employeeForm("remarks"), '_label -> "备注", 'class -> "form-control")
