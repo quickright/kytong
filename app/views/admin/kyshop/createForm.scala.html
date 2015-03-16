@@ -16,54 +16,40 @@
                 <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
             </div>
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="name">公司名</label>
+                <input class="form-control" type="text" id="name" name="name" value='@form("name").value' placeholder="公司名">
             </div>
-            @inputText(kyshopForm("mobile"), '_label -> "手机号", 'class -> "form-control")
-            @inputText(kyshopForm("name"), '_label -> "公司名", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="namePy">公司拼音</label>
+                <input class="form-control" type="text" id="namePy" name="namePy" value='@form("namePy").value' placeholder="公司拼音">
             </div>
-            @inputText(kyshopForm("namePy"), '_label -> "公司拼音", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="forShort">公司简称</label>
+                <input class="form-control" type="text" id="forShort" name="forShort" value='@form("forShort").value' placeholder="公司简称">
             </div>
-            @inputText(kyshopForm("forShort"), '_label -> "公司简称", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="address">店面地址</label>
+                <input class="form-control" type="text" id="address" name="address" value='@form("address").value' placeholder="店面地址">
             </div>
-            @inputText(kyshopForm("address"), '_label -> "店面地址", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="email">电子邮件</label>
+                <input class="form-control" type="text" id="email" name="email" value='@form("email").value' placeholder="电子邮件">
             </div>
-            @inputText(kyshopForm("email"), '_label -> "电子邮件", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="tel">座机</label>
+                <input class="form-control" type="text" id="tel" name="tel" value='@form("tel").value' placeholder="座机">
             </div>
-            @inputText(kyshopForm("tel"), '_label -> "座机", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="fax">传真</label>
+                <input class="form-control" type="text" id="fax" name="fax" value='@form("fax").value' placeholder="传真">
             </div>
-            @inputText(kyshopForm("fax"), '_label -> "传真", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="site">网站</label>
+                <input class="form-control" type="text" id="site" name="site" value='@form("site").value' placeholder="网站">
             </div>
-            @inputText(kyshopForm("site"), '_label -> "网站", 'class -> "form-control")
             <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
-            </div>
-            @inputText(kyshopForm("status"), '_label -> "状态", 'class -> "form-control")
-            <div class="form-group">
-                <label  for="mobile">手机号</label>
-                <input class="form-control" type="text" id="mobile" name="mobile" value='@form("mobile").value' placeholder="手机号">
+                <label  for="status">状态</label>
+                <input class="form-control" type="text" id="status" name="status" value='@form("status").value' placeholder="状态">
             </div>
             <div class="form-group">
                 <label  for="profile">公司介绍</label>
@@ -73,13 +59,10 @@
                 <label  for="remarks">备注</label>
                 <input class="form-control" type="textarea" id="remarks" name="remarks" value='@form("remarks").value' placeholder="备注">
             </div>
+            <div class="actions">
+                <input type="submit" value="提交" class="btn btn-primary"> or <a href="@controllers.admin.routes.KyShopAction.index" class="btn btn-default">取消</a>
+            </div>
         </form>
-        @form(controllers.admin.routes.KyShopAction.save()){
-        <fieldset>@formElements(kyshopForm)</fieldset>
-        <div class="actions">
-            <input type="submit" value="提交" class="btn btn-primary"> or <a href="@controllers.admin.routes.KyShopAction.index" class="btn btn-default">取消</a>
-        </div>
-        }
 
     </div>
     <div class="col-md-4">
